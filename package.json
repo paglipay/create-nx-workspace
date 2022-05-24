@@ -5,8 +5,8 @@
   "scripts": {
     "nx": "nx",
     "start": "node dist/apps/api/main.js",
-    "build": "npx nx run-many --target=build --projects=react-express --parallel=true",
-    "dev": "npx nx run-many --target=serve --projects=react-express --parallel=true",
+    "build": "npx nx run-many --target=build --projects=react-express,api --parallel=true",
+    "dev": "npx nx run-many --target=serve --projects=react-express,api --parallel=true",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
