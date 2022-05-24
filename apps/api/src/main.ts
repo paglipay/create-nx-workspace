@@ -1,7 +1,7 @@
 import * as express from 'express';
 import * as path from 'path';
 import { Message } from '@create-nx-workspace/api-interfaces';
-const CLIENT_BUILD_PATH = path.join(__dirname, '../nx-fullstack');
+const CLIENT_BUILD_PATH = path.join(__dirname, '../react-express');
 
 const app = express();
 app.use(express.static(CLIENT_BUILD_PATH));
